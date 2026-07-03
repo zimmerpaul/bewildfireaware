@@ -1,0 +1,104 @@
+---
+// Pocket Card ERC chart, rendered at build time as inline SVG (no client JS).
+//
+// props.card = {
+//   title, yMax, p90, observedYear,
+//   series: { max: [[day,v],...], observed: [...], forecasted: [...] },
+//   comparisons: [{ label: '2018', points: [[day,v],...] }, ...],
+// }
+const { card } = Astro.props;
+
+const W = 1000;
+const M = { l: 60, r: 25, t: 115, b: 45 };
+
+const x = (day) => M.l + (day / 365) * pw;
+const y = (v) => M.t + ph - (v / card.yMax) * ph;
+
+const path = (pts) =>
+  pts?.length ? 'M' + pts.map(([d, v]) => `${x(d).toFixed(1)},${y(v).toFixed(1)}`).join('L') : '';
+
+const COMPARISON_COLORS = ['#b06a8f', '#8e7cc3', '#6aa84f', '#a64d79'];
+const comparisons = (card.comparisons ?? []).map((c, i) => ({
+  ...c,
+  color: COMPARISON_COLORS[i % COMPARISON_COLORS.length],
+}));
+
+const yr = card.observedYear ? `${card.observedYear} ` : '';
+const legend = [
+  { label: 'Max', color: '#d32f2f', dash: null },
+  card.series.observed?.length && { label: `${yr}Observed`, color: '#1e3fd0', dash: null },
+  card.series.forecasted?.length && { label: `${yr}Forecasted`, color: '#6fa8dc', dash: null },
+  ...comparisons.map((c) => ({ label: c.label, color: c.color, dash: '2 6' })),
+  card.p90 != null && { label: '90th', color: '#c8c8c8', dash: null },
+].filter(Boolean);
+
+// Legend positions sized to label length, wrapping to extra rows as needed
+let lx = 70, lrow = 0;
+const legendItems = legend.map((l) => {
+  const width = 46 + l.label.length * 11.5 + 30;
+  if (lx + width > W - 20) { lx = 70; lrow++; }
+  const item = { ...l, x: lx, y: 80 + lrow * 32 };
+  lx += width;
+  return item;
+});
+M.t += lrow * 32;
+
+const H = 560 + lrow * 32;
+const pw = W - M.l - M.r, ph = H - M.t - M.b;
+
+// Month tick marks: 1-Jan, 1-Mar, 1-May, 1-Jul, 1-Sep, 1-Nov
+const ticks = [
+  [0, '1-Jan'], [59, '1-Mar'], [120, '1-May'], [181, '1-Jul'], [243, '1-Sep'], [304, '1-Nov'],
+];
+const yStep = card.yMax > 100 ? 40 : 20;
+const yTicks = [];
+for (let v = 0; v <= card.yMax; v += yStep) yTicks.push(v);
+---
+<figure class="pocket-card">
+  <svg viewBox={`0 0 ${W} ${H}`} xmlns="http://www.w3.org/2000/svg" role="img" aria-label={card.title}>
+    <rect width={W} height={H} fill="#ffffff" rx="8" />
+    <text x={W / 2} y="45" text-anchor="middle" font-size="30" fill="#757575" font-family="Arial, sans-serif">{card.title}</text>
+
+    {/* legend */}
+    {legendItems.map((l) => (
+      <g>
+        <line x1={l.x} y1={l.y} x2={l.x + 36} y2={l.y} stroke={l.color} stroke-width="8"
+          stroke-dasharray={l.dash} stroke-linecap={l.dash ? 'round' : 'butt'} />
+        <text x={l.x + 46} y={l.y + 6} font-size="20" fill="#333" font-family="Arial, sans-serif">{l.label}</text>
+      </g>
+    ))}
+
+    {/* gridlines + y labels */}
+    {yTicks.map((v) => (
+      <g>
+        <line x1={M.l} y1={y(v)} x2={W - M.r} y2={y(v)} stroke={v === 0 ? '#333' : '#dcdcdc'} stroke-width={v === 0 ? 2 : 1} />
+        <text x={M.l - 10} y={y(v) + 6} text-anchor="end" font-size="20" fill="#333" font-family="Arial, sans-serif">{v}</text>
+      </g>
+    ))}
+
+    {/* 90th percentile reference line */}
+    {card.p90 != null && (
+      <line x1={M.l} y1={y(card.p90)} x2={W - M.r} y2={y(card.p90)} stroke="#c8c8c8" stroke-width="5" />
+    )}
+
+    {/* x tick labels */}
+    {ticks.map(([d, label]) => (
+      <text x={x(d)} y={H - 12} text-anchor="middle" font-size="20" fill="#333" font-family="Arial, sans-serif">{label}</text>
+    ))}
+
+    {/* series: comparisons behind, then max, observed, forecast on top */}
+    {comparisons.map((c) => (
+      <path d={path(c.points)} fill="none" stroke={c.color} stroke-width="3"
+        stroke-dasharray="2 6" stroke-linecap="round" />
+    ))}
+    {card.series.max?.length > 0 && (
+      <path d={path(card.series.max)} fill="none" stroke="#d32f2f" stroke-width="3" stroke-linejoin="round" />
+    )}
+    {card.series.observed?.length > 0 && (
+      <path d={path(card.series.observed)} fill="none" stroke="#1e3fd0" stroke-width="3" stroke-linejoin="round" />
+    )}
+    {card.series.forecasted?.length > 0 && (
+      <path d={path(card.series.forecasted)} fill="none" stroke="#6fa8dc" stroke-width="5" stroke-linejoin="round" />
+    )}
+  </svg>
+</figure>

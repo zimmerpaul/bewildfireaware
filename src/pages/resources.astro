@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+
+const categories = [
+  {
+    title: 'Active Wildfires',
+    items: [
+      { name: 'WatchDuty', url: 'https://app.watchduty.org/', desc: 'The most current information on wildfires in the US. Track active fires with real-time updates and mapping.' },
+      { name: 'National Situation Report', url: 'https://www.nifc.gov/nicc-files/sitreprt.pdf', desc: "The National Interagency Fire Center's daily situation report on wildfire activity across the United States." },
+    ],
+  },
+  {
+    title: 'Air Quality & Smoke',
+    items: [
+      { name: 'AirNow Fire & Smoke Map', url: 'https://fire.airnow.gov/', desc: 'Where is this smoke coming from? Track smoke plumes and their sources across the country.' },
+      { name: 'PurpleAir', url: 'https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#1/19.5/-30', desc: 'How is the air quality in my area or where I want to visit? Real-time air quality monitoring from a network of sensors.' },
+    ],
+  },
+  {
+    title: 'Weather & Red Flag Warnings',
+    items: [
+      { name: 'National Weather Service — Grand Junction', url: 'https://www.weather.gov/wrh/fire?wfo=gjt', desc: 'Fire weather forecasts and red flag warnings for the Grand Junction, Colorado forecast area.' },
+      { name: 'National Weather Service — Pueblo', url: 'https://www.weather.gov/pub/fire', desc: 'Fire weather forecasts and red flag warnings for the Pueblo, Colorado forecast area.' },
+    ],
+  },
+  {
+    title: 'Fire Danger Forecasting',
+    items: [
+      { name: 'USGS Wildfire Danger Forecast', url: 'https://firedanger.cr.usgs.gov/viewer/index.html', desc: 'Wildfire danger forecasting using satellite technology. View forecasts for large fire probability and fire spread probability for days 1 through 7. A great cross-reference with BeWildfireAware fire danger forecasting.' },
+    ],
+  },
+];
+---
+<Base title="Resources - BeWildfireAware" active="resources">
+  <main class="content">
+    <h2>Resources</h2>
+    <p>Helpful external links for wildfire tracking, air quality, weather warnings, and fire danger forecasting.</p>
+    {categories.map((cat) => (
+      <section>
+        <h3>{cat.title}</h3>
+        {cat.items.map((item) => (
+          <div class="resource-item">
+            <h4><a href={item.url} target="_blank" rel="noopener">{item.name}</a></h4>
+            <p>{item.desc}</p>
+          </div>
+        ))}
+      </section>
+    ))}
+  </main>
+</Base>

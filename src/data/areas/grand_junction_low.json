@@ -1,0 +1,231 @@
+{
+  "slug": "grand_junction_low",
+  "name": "Grand Junction (Low)",
+  "fetchedAt": "2026-07-03T19:46:43.959Z",
+  "dispatchTitle": "Grand Junction Interagency Dispatch Area",
+  "dateLabel": "Friday, July 03",
+  "areaTitle": "Grand Junction - Low Elevation",
+  "danger": "Extreme",
+  "lastUpdated": "7/3/2026 02:38",
+  "restrictions": {
+    "text": "Fire restrictions may be in place, for up to date info:",
+    "url": "https://westslopefireinfo.com/"
+  },
+  "observations": [
+    {
+      "label": "ERC %",
+      "value": "99%",
+      "limit": "> 86%",
+      "triggered": true
+    },
+    {
+      "label": "BI %",
+      "value": "98%",
+      "limit": "> 90%",
+      "triggered": true
+    },
+    {
+      "label": "Winds",
+      "value": "14",
+      "limit": "> 10",
+      "triggered": true
+    },
+    {
+      "label": "Wind Dir",
+      "value": "NNE"
+    },
+    {
+      "label": "24hr Rain",
+      "value": "0.00"
+    },
+    {
+      "label": "Max Temp",
+      "value": "86",
+      "limit": "> 85",
+      "triggered": true
+    },
+    {
+      "label": "Min Rh",
+      "value": "7",
+      "limit": "< 15",
+      "triggered": true
+    },
+    {
+      "label": "1000hr Fuels",
+      "value": "9",
+      "limit": "< 12",
+      "triggered": true
+    },
+    {
+      "label": "Max Rh",
+      "value": "21",
+      "limit": "< 45",
+      "triggered": true
+    }
+  ],
+  "thresholds": "ERC > 86%, BI > 90%, Wind Speed > 10\nMax Temp > 85, Min Rh < 15, 1000hr Fuels < 12, Max RH < 45\nIf three or more of the seven thresholds are met, consider it a watchout.",
+  "forecast": {
+    "title": "Low Elevation FDRA Extended Forecast",
+    "dates": [
+      "3-Jul",
+      "4-Jul",
+      "5-Jul",
+      "6-Jul",
+      "7-Jul",
+      "8-Jul",
+      "9-Jul"
+    ],
+    "rows": [
+      {
+        "label": "Adjective Fire Danger",
+        "values": [
+          "Extreme",
+          "Extreme",
+          "Extreme",
+          "Very High",
+          "Very High",
+          "Very High",
+          "Extreme"
+        ]
+      },
+      {
+        "label": "ERC-X Percentile",
+        "values": [
+          "99%",
+          "99%",
+          "99%",
+          "95%",
+          "95%",
+          "95%",
+          "98%"
+        ]
+      },
+      {
+        "label": "BI-X Percentile",
+        "values": [
+          "98%",
+          "89%",
+          "89%",
+          "85%",
+          "85%",
+          "88%",
+          "88%"
+        ]
+      },
+      {
+        "label": "Temperature",
+        "values": [
+          "86",
+          "88",
+          "90",
+          "87",
+          "89",
+          "89",
+          "91"
+        ]
+      },
+      {
+        "label": "Relative Humidity",
+        "values": [
+          "7",
+          "7",
+          "8",
+          "13",
+          "14",
+          "13",
+          "11"
+        ]
+      },
+      {
+        "label": "Winds",
+        "values": [
+          "14",
+          "10",
+          "10",
+          "10",
+          "10",
+          "11",
+          "10"
+        ]
+      },
+      {
+        "label": "Wind Direction",
+        "values": [
+          "NNE",
+          "N",
+          "NNE",
+          "NE",
+          "NNE",
+          "NNE",
+          "NNE"
+        ]
+      },
+      {
+        "label": "Precipitation 24hr rain",
+        "values": [
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00"
+        ]
+      },
+      {
+        "label": "1000hr Fuels",
+        "values": [
+          "9",
+          "9",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8"
+        ]
+      },
+      {
+        "label": "Max Rh",
+        "values": [
+          "21",
+          "23",
+          "21",
+          "27",
+          "37",
+          "36",
+          "30"
+        ]
+      },
+      {
+        "label": "ERC-X (Actual Number 1-110)",
+        "values": [
+          "101",
+          "101",
+          "102",
+          "96",
+          "94",
+          "96",
+          "98"
+        ]
+      },
+      {
+        "label": "BI-X  (Actual Number 1-352)",
+        "values": [
+          "256",
+          "216",
+          "220",
+          "207",
+          "205",
+          "216",
+          "212"
+        ]
+      }
+    ]
+  },
+  "watchout": {
+    "met": 7,
+    "total": 7,
+    "isWatchout": true
+  },
+  "raws": "The Low Elevation Fire Danger Rating Area uses the following Remote Automated Weather Stations (RAWS) which are equally weighted in value, using Fuel Model X (Brush) incorporating data years 2005-2024 are:  \n52407: Pine Ridge, 52410: Little Dolores, 51504: Rifle, 51507: Demaree"
+}

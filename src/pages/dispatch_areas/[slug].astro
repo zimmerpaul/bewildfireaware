@@ -1,0 +1,131 @@
+---
+import Base from '../../layouts/Base.astro';
+import PocketCard from '../../components/PocketCard.astro';
+import areas from '../../data/dispatch_areas.json';
+
+export function getStaticPaths() {
+  const dataFiles = import.meta.glob('../../data/areas/*.json', { eager: true });
+  return areas.map((area) => {
+    const data = dataFiles[`../../data/areas/${area.slug}.json`];
+    if (!data) throw new Error(`No data file for ${area.slug} — run \`npm run fetch-data\` first`);
+    return { params: { slug: area.slug }, props: { area, data: data.default ?? data } };
+  });
+}
+
+const { area, data } = Astro.props;
+
+const dangerClass = (level) =>
+  'danger-' + (level ?? '').toLowerCase().replace(/\s+/g, '-');
+
+const DANGER_LEVELS = ['Low', 'Moderate', 'High', 'Very High', 'Extreme'];
+---
+<Base title={`Be Wildfire Aware - ${area.name}`} active="dispatch">
+  <main class="area-page">
+    <p class="dispatch-title">{data.dispatchTitle}</p>
+    <h1>{data.areaTitle ?? area.name}</h1>
+    <p class="area-date">{data.dateLabel}</p>
+
+    <div class={`danger-banner ${dangerClass(data.danger)}`} role="status">
+      <span class="danger-label">Today's Fire Danger is</span>
+      <span class="danger-value">{data.danger}</span>
+    </div>
+
+    <div class="area-meta">
+      {data.lastUpdated && <span>Last updated: {data.lastUpdated}</span>}
+      {data.restrictions?.url && (
+        <span>
+          {(data.restrictions.text ?? 'Fire restrictions info:').replace(/:$/, '')}:
+          <a href={data.restrictions.url} target="_blank" rel="noopener"> West Slope Fire Info</a>
+        </span>
+      )}
+    </div>
+
+    {data.pocketCard && <PocketCard card={data.pocketCard} />}
+
+    <h2>Today's Conditions</h2>
+    {data.watchout && data.watchout.isWatchout && (
+      <p class="watchout-banner" role="alert">
+        &#9650; Watchout: {data.watchout.met} of {data.watchout.total} local thresholds met today
+      </p>
+    )}
+    {data.watchout && !data.watchout.isWatchout && (
+      <p class="watchout-summary">{data.watchout.met} of {data.watchout.total} local thresholds met today</p>
+    )}
+    <div class="obs-grid">
+      {data.observations.map((o) => (
+        <div class={`obs-card${o.triggered ? ' triggered' : ''}`}>
+          <span class="obs-value">{o.value}</span>
+          <span class="obs-label">{o.label}</span>
+          {o.limit && (
+            <span class="obs-limit">{o.triggered ? '▲ threshold ' : 'threshold '}{o.limit}</span>
+          )}
+        </div>
+      ))}
+    </div>
+
+    {data.thresholds && (
+      <>
+        <h2>Local Thresholds</h2>
+        <p class="thresholds">{data.thresholds}</p>
+      </>
+    )}
+
+    {data.forecast?.rows?.length > 0 && (
+      <>
+        <h2>{data.forecast.title ?? 'Extended Forecast'}</h2>
+        {data.fuelModel && <p class="area-date">{data.fuelModel}</p>}
+        <div class="table-wrap">
+          <table class="forecast-table">
+            <thead>
+              <tr>
+                <th scope="col">Indicator</th>
+                {data.forecast.dates.map((d) => <th scope="col">{d}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {data.forecast.rows.map((row) => (
+                <tr>
+                  <th scope="row">{row.label}</th>
+                  {row.values.map((v) => (
+                    <td class={DANGER_LEVELS.includes(v) ? dangerClass(v) : undefined}>{v}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    )}
+
+    {data.firesToRemember && (
+      <>
+        <h2>Fires to Remember</h2>
+        <div class="table-wrap">
+          <table class="forecast-table">
+            <thead>
+              <tr>
+                <th scope="col">Fire</th>
+                {data.firesToRemember.columns.map((c) => <th scope="col">{c}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {data.firesToRemember.rows.map((row) => (
+                <tr>
+                  <th scope="row">{row.name}</th>
+                  {row.values.map((v) => <td>{v}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    )}
+
+    {data.raws && <p class="raws-note">{data.raws}</p>}
+
+    <p class="pdf-note">
+      If you are interested in having this data emailed to you daily as a PDF, please email:
+      <a href="mailto:38north.llc@gmail.com"> 38north.llc@gmail.com</a>
+    </p>
+  </main>
+</Base>

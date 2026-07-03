@@ -1,0 +1,32 @@
+---
+import areas from '../data/dispatch_areas.json';
+const { active = '' } = Astro.props;
+const learnLinks = [
+  ['/learn-more.html', 'Overview'],
+  ['/learn_more/using-the-website.html', 'Using the Website'],
+  ['/learn_more/fire-behavior.html', 'Fire Behavior Basics'],
+  ['/learn_more/nfdrs.html', 'NFDRS Explained'],
+  ['/learn_more/inputs.html', 'Weather & Fuel Inputs'],
+  ['/learn_more/outputs.html', 'NFDRS Outputs'],
+  ['/learn_more/fuel-models.html', 'Fuel Models'],
+  ['/learn_more/terminology.html', 'Terminology & Restrictions'],
+];
+---
+<ul>
+  <li><a href="/index.html" class={active === 'home' ? 'active' : undefined}>Home</a></li>
+  <li><a href="/about.html" class={active === 'about' ? 'active' : undefined}>Who We Are</a></li>
+  <li class="dropdown">
+    <a class={`dropdown-toggle${active === 'learn' ? ' active' : ''}`}>Learn More</a>
+    <div class="dropdown-content">
+      {learnLinks.map(([href, label]) => <a href={href}>{label}</a>)}
+    </div>
+  </li>
+  <li><a href="/resources.html" class={active === 'resources' ? 'active' : undefined}>Resources</a></li>
+  <li class="dropdown">
+    <a class={`dropdown-toggle${active === 'dispatch' ? ' active' : ''}`}>Dispatch Areas</a>
+    <div class="dropdown-content">
+      <a href="/dispatch_areas/dispatch_areas.html">Dispatch Area Map</a>
+      {areas.map((a) => <a href={`/dispatch_areas/${a.slug}.html`}>{a.name}</a>)}
+    </div>
+  </li>
+</ul>

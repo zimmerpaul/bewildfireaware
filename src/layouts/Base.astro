@@ -1,0 +1,41 @@
+---
+import NavLinks from '../components/NavLinks.astro';
+const { title, active = '' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- Google tag (gtag.js) -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-H0FDXLQ32C"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H0FDXLQ32C');
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/index.html"><img src="/images/bwa_logo_150x150px.webp" alt="BeWildfireAware Logo" /></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav>
+      <NavLinks active={active} />
+    </nav>
+  </header>
+
+  <slot />
+
+  <footer>
+    <NavLinks />
+    <p>Contact us at: gunnisonbc71@gmail.com</p>
+  </footer>
+  <script is:inline src="/nav.js"></script>
+</body>
+</html>

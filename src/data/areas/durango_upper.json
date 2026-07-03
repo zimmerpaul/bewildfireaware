@@ -1,0 +1,232 @@
+{
+  "slug": "durango_upper",
+  "name": "Durango (Upper)",
+  "fetchedAt": "2026-07-03T19:46:40.709Z",
+  "dispatchTitle": "Durango Interagency Dispatch Area",
+  "dateLabel": "Friday, July 03",
+  "areaTitle": "Durango - UPPER",
+  "danger": "Very High",
+  "lastUpdated": "7/3/2026 2:53:43",
+  "restrictions": {
+    "text": "Fire restrictions may be in place, for up to date info:",
+    "url": "https://westslopefireinfo.com/"
+  },
+  "observations": [
+    {
+      "label": "ERC %",
+      "value": "96%",
+      "limit": "> 90%",
+      "triggered": true
+    },
+    {
+      "label": "BI %",
+      "value": "99%",
+      "limit": "> 90%",
+      "triggered": true
+    },
+    {
+      "label": "Winds",
+      "value": "11",
+      "limit": "> 13",
+      "triggered": false
+    },
+    {
+      "label": "Direction",
+      "value": "NE"
+    },
+    {
+      "label": "24hr Rain",
+      "value": "0.00"
+    },
+    {
+      "label": "Max Temp",
+      "value": "82",
+      "limit": "> 83",
+      "triggered": false
+    },
+    {
+      "label": "Min Rh %",
+      "value": "7",
+      "limit": "< 10",
+      "triggered": true
+    },
+    {
+      "label": "1000hr Fuels",
+      "value": "10",
+      "limit": "< 11",
+      "triggered": true
+    },
+    {
+      "label": "Max Rh",
+      "value": "22",
+      "limit": "< 31",
+      "triggered": true
+    }
+  ],
+  "thresholds": "ERC > 90%, BI > 90%, Wind Speed > 13\nMax Temp > 83, Min Rh < 10, 1000hr Fuels < 11, Max RH < 31\nIf three or more of the seven thresholds are met, consider it a watchout.",
+  "forecast": {
+    "title": "Upper FDRA Extended Forecast",
+    "dates": [
+      "3-Jul",
+      "4-Jul",
+      "5-Jul",
+      "6-Jul",
+      "7-Jul",
+      "8-Jul",
+      "9-Jul"
+    ],
+    "rows": [
+      {
+        "label": "Adjective Fire Danger",
+        "values": [
+          "Very High",
+          "Extreme",
+          "Extreme",
+          "Extreme",
+          "Extreme",
+          "Extreme",
+          "Extreme"
+        ]
+      },
+      {
+        "label": "ERC-Y Percentile",
+        "values": [
+          "96%",
+          "97%",
+          "97%",
+          "97%",
+          "97%",
+          "97%",
+          "98%"
+        ]
+      },
+      {
+        "label": "BI-Y Percentile",
+        "values": [
+          "99%",
+          "98%",
+          "96%",
+          "87%",
+          "89%",
+          "92%",
+          "94%"
+        ]
+      },
+      {
+        "label": "Temperature",
+        "values": [
+          "82",
+          "84",
+          "85",
+          "81",
+          "83",
+          "84",
+          "85"
+        ]
+      },
+      {
+        "label": "Relative Humidity",
+        "values": [
+          "7",
+          "8",
+          "11",
+          "19",
+          "20",
+          "17",
+          "15"
+        ]
+      },
+      {
+        "label": "Winds",
+        "values": [
+          "11",
+          "10",
+          "10",
+          "8",
+          "9",
+          "9",
+          "9"
+        ]
+      },
+      {
+        "label": "Wind Direction",
+        "values": [
+          "NE",
+          "NNE",
+          "NNE",
+          "NE",
+          "NE",
+          "NE",
+          "NNE"
+        ]
+      },
+      {
+        "label": "Precipitation 24hr rain",
+        "values": [
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00"
+        ]
+      },
+      {
+        "label": "1000hr Fuels",
+        "values": [
+          "10",
+          "10",
+          "10",
+          "9",
+          "9",
+          "9",
+          "9"
+        ]
+      },
+      {
+        "label": "Max Rh",
+        "values": [
+          "22",
+          "21",
+          "25",
+          "37",
+          "47",
+          "46",
+          "39"
+        ]
+      },
+      {
+        "label": "ERC-Y (Actual Number 1-70)",
+        "values": [
+          "60",
+          "61",
+          "61",
+          "61",
+          "61",
+          "62",
+          "63"
+        ]
+      },
+      {
+        "label": "BI-Y  (Actual Number 1-55)",
+        "values": [
+          "42",
+          "40",
+          "39",
+          "34",
+          "35",
+          "37",
+          "38"
+        ]
+      }
+    ]
+  },
+  "fuelModel": "Fuel Model - Y",
+  "watchout": {
+    "met": 5,
+    "total": 7,
+    "isWatchout": true
+  },
+  "raws": "The Upper Fire Danger Rating Area uses the following Remote Automated Weather Stations (RAWS) which are equally weighted in value, using Fuel Model Z (Slash) incorporating data years 2005-2024 are:  \nSalter (055205), Devil Mtn. (055901), Sandoval (055902), Log Chute (055808)"
+}
