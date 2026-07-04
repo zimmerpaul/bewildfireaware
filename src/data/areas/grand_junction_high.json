@@ -1,12 +1,12 @@
 {
   "slug": "grand_junction_high",
   "name": "Grand Junction (High)",
-  "fetchedAt": "2026-07-04T02:44:22.046Z",
+  "fetchedAt": "2026-07-04T11:02:34.726Z",
   "dispatchTitle": "Grand Junction Interagency Dispatch Area",
-  "dateLabel": "Friday, July 03",
+  "dateLabel": "Saturday, July 04",
   "areaTitle": "Grand Junction - High Elevation",
   "danger": "Extreme",
-  "lastUpdated": "7/3/2026 02:38",
+  "lastUpdated": "7/4/2026 02:38",
   "restrictions": {
     "text": "Fire restrictions may be in place, for up to date info:",
     "url": "https://westslopefireinfo.com/"
@@ -20,13 +20,13 @@
     },
     {
       "label": "BI %",
-      "value": "100%",
+      "value": "98%",
       "limit": "> 90%",
       "triggered": true
     },
     {
       "label": "Winds",
-      "value": "11",
+      "value": "7",
       "limit": "> 15",
       "triggered": false
     },
@@ -40,13 +40,13 @@
     },
     {
       "label": "Max Temp",
-      "value": "72",
+      "value": "73",
       "limit": "> 75",
       "triggered": false
     },
     {
       "label": "Min Rh",
-      "value": "12",
+      "value": "14",
       "limit": "< 20",
       "triggered": true
     },
@@ -58,7 +58,7 @@
     },
     {
       "label": "Max Rh",
-      "value": "33",
+      "value": "41",
       "limit": "< 55",
       "triggered": true
     }
@@ -67,13 +67,13 @@
   "forecast": {
     "title": "High Elevation FDRA Extended Forecast",
     "dates": [
-      "3-Jul",
       "4-Jul",
       "5-Jul",
       "6-Jul",
       "7-Jul",
       "8-Jul",
-      "9-Jul"
+      "9-Jul",
+      "10-Jul"
     ],
     "rows": [
       {
@@ -95,7 +95,7 @@
           "100%",
           "100%",
           "100%",
-          "99%",
+          "100%",
           "100%",
           "100%"
         ]
@@ -103,61 +103,61 @@
       {
         "label": "BI-Y Percentile",
         "values": [
-          "100%",
-          "99%",
-          "98%",
           "98%",
           "96%",
           "98%",
-          "99%"
+          "98%",
+          "98%",
+          "100%",
+          "100%"
         ]
       },
       {
         "label": "Temperature",
         "values": [
-          "72",
           "73",
           "76",
+          "77",
           "73",
-          "72",
-          "73",
-          "74"
+          "74",
+          "75",
+          "78"
         ]
       },
       {
         "label": "Relative Humidity",
         "values": [
-          "12",
-          "15",
           "14",
-          "20",
-          "27",
-          "23",
-          "21"
+          "15",
+          "16",
+          "25",
+          "22",
+          "18",
+          "14"
         ]
       },
       {
         "label": "Winds",
         "values": [
-          "11",
-          "9",
-          "8",
-          "8",
+          "7",
+          "7",
           "8",
           "10",
-          "9"
+          "10",
+          "11",
+          "11"
         ]
       },
       {
         "label": "Wind Direction",
         "values": [
           "NNE",
-          "NNE",
           "NE",
           "NE",
           "NE",
           "NE",
-          "NE"
+          "NE",
+          "NNE"
         ]
       },
       {
@@ -166,9 +166,9 @@
           "0.00",
           "0.00",
           "0.00",
+          "0.02",
           "0.01",
-          "0.02",
-          "0.02",
+          "0.00",
           "0.00"
         ]
       },
@@ -178,7 +178,7 @@
           "11",
           "11",
           "11",
-          "11",
+          "10",
           "10",
           "10",
           "10"
@@ -187,37 +187,37 @@
       {
         "label": "Max Rh",
         "values": [
-          "33",
-          "42",
-          "48",
-          "53",
-          "59",
-          "59",
-          "53"
+          "41",
+          "52",
+          "51",
+          "57",
+          "61",
+          "55",
+          "48"
         ]
       },
       {
         "label": "ERC-Y (Actual Number 1-60)",
         "values": [
           "53",
-          "53",
+          "54",
           "54",
           "53",
-          "52",
           "53",
-          "54"
+          "54",
+          "56"
         ]
       },
       {
         "label": "BI-Y  (Actual Number 1-44)",
         "values": [
-          "38",
-          "34",
-          "33",
-          "31",
-          "29",
           "32",
-          "33"
+          "30",
+          "32",
+          "32",
+          "32",
+          "35",
+          "37"
         ]
       }
     ]
@@ -2432,13 +2432,13 @@
         [
           183,
           53
+        ],
+        [
+          184,
+          53
         ]
       ],
       "forecasted": [
-        [
-          183,
-          53
-        ],
         [
           184,
           53
@@ -2449,11 +2449,11 @@
         ],
         [
           186,
-          53
+          54
         ],
         [
           187,
-          52
+          53
         ],
         [
           188,
@@ -2462,6 +2462,10 @@
         [
           189,
           54
+        ],
+        [
+          190,
+          56
         ]
       ]
     },
