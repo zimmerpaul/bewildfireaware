@@ -2,10 +2,10 @@
   "slug": "montrose_west",
   "name": "Montrose (West)",
   "dispatchTitle": "Montrose Interagency Dispatch Area",
-  "dateLabel": "Sunday, July 05",
+  "dateLabel": "Monday, July 06",
   "areaTitle": "Montrose - West",
   "danger": "Extreme",
-  "lastUpdated": "7/5/2026 03:11",
+  "lastUpdated": "7/6/2026 03:11",
   "restrictions": {
     "text": "Fire restrictions in place, for up to date info:",
     "url": "https://westslopefireinfo.com/"
@@ -19,7 +19,7 @@
     },
     {
       "label": "BI %",
-      "value": "96%",
+      "value": "92%",
       "limit": "> 90%",
       "triggered": true
     },
@@ -31,7 +31,7 @@
     },
     {
       "label": "Wind Dir",
-      "value": "N"
+      "value": "NNE"
     },
     {
       "label": "24hr Rain",
@@ -45,7 +45,7 @@
     },
     {
       "label": "Min Rh",
-      "value": "7",
+      "value": "13",
       "limit": "< 20",
       "triggered": true
     },
@@ -57,7 +57,7 @@
     },
     {
       "label": "Max Rh",
-      "value": "20",
+      "value": "29",
       "limit": "< 55",
       "triggered": true
     }
@@ -66,13 +66,13 @@
   "forecast": {
     "title": "West FDRA Extended Forecast",
     "dates": [
-      "5-Jul",
       "6-Jul",
       "7-Jul",
       "8-Jul",
       "9-Jul",
       "10-Jul",
-      "11-Jul"
+      "11-Jul",
+      "12-Jul"
     ],
     "rows": [
       {
@@ -91,7 +91,7 @@
         "label": "ERC-Y Percentile",
         "values": [
           "98%",
-          "98%",
+          "97%",
           "98%",
           "98%",
           "99%",
@@ -102,13 +102,13 @@
       {
         "label": "BI-Y Percentile",
         "values": [
-          "96%",
+          "92%",
           "90%",
-          "94%",
           "98%",
           "98%",
           "97%",
-          "95%"
+          "95%",
+          "96%"
         ]
       },
       {
@@ -116,44 +116,44 @@
         "values": [
           "93",
           "93",
-          "94",
           "95",
+          "93",
           "95",
           "97",
-          "98"
+          "95"
         ]
       },
       {
         "label": "Relative Humidity",
         "values": [
-          "7",
-          "12",
           "13",
-          "9",
+          "13",
+          "10",
           "8",
-          "6",
-          "7"
+          "7",
+          "7",
+          "10"
         ]
       },
       {
         "label": "Winds",
         "values": [
           "11",
-          "11",
           "12",
           "14",
           "14",
           "12",
-          "10"
+          "12",
+          "13"
         ]
       },
       {
         "label": "Wind Direction",
         "values": [
-          "N",
           "NNE",
           "NNE",
           "N",
+          "NNE",
           "N",
           "N",
           "NNE"
@@ -177,7 +177,7 @@
           "8",
           "8",
           "8",
-          "8",
+          "7",
           "7",
           "7",
           "7"
@@ -186,13 +186,13 @@
       {
         "label": "Max Relative Humidity",
         "values": [
-          "20",
-          "28",
-          "36",
+          "29",
+          "38",
           "35",
+          "28",
           "27",
           "25",
-          "24"
+          "27"
         ]
       },
       {
@@ -200,23 +200,23 @@
         "values": [
           "69",
           "69",
-          "69",
           "70",
           "71",
+          "72",
           "73",
-          "74"
+          "73"
         ]
       },
       {
         "label": "BI-Y  (Actual Number 1-66)",
         "values": [
-          "47",
-          "42",
-          "45",
-          "50",
+          "43",
+          "43",
+          "49",
           "51",
           "49",
-          "45"
+          "45",
+          "46"
         ]
       }
     ]
@@ -2435,13 +2435,13 @@
         [
           184,
           69
+        ],
+        [
+          185,
+          70
         ]
       ],
       "forecasted": [
-        [
-          184,
-          69
-        ],
         [
           185,
           69
@@ -2460,11 +2460,15 @@
         ],
         [
           189,
-          73
+          72
         ],
         [
           190,
-          74
+          73
+        ],
+        [
+          191,
+          73
         ]
       ]
     },
