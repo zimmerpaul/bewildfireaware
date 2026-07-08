@@ -2,10 +2,10 @@
   "slug": "montrose_west",
   "name": "Montrose (West)",
   "dispatchTitle": "Montrose Interagency Dispatch Area",
-  "dateLabel": "Tuesday, July 07",
+  "dateLabel": "Wednesday, July 08",
   "areaTitle": "Montrose - West",
   "danger": "Extreme",
-  "lastUpdated": "7/7/2026 03:12",
+  "lastUpdated": "7/8/2026 03:11",
   "restrictions": {
     "text": "Fire restrictions in place, for up to date info:",
     "url": "https://westslopefireinfo.com/"
@@ -19,19 +19,19 @@
     },
     {
       "label": "BI %",
-      "value": "94%",
+      "value": "96%",
       "limit": "> 90%",
       "triggered": true
     },
     {
       "label": "Winds",
-      "value": "12",
+      "value": "13",
       "limit": "> 15",
       "triggered": false
     },
     {
       "label": "Wind Dir",
-      "value": "NNE"
+      "value": "N"
     },
     {
       "label": "24hr Rain",
@@ -45,7 +45,7 @@
     },
     {
       "label": "Min Rh",
-      "value": "13",
+      "value": "10",
       "limit": "< 20",
       "triggered": true
     },
@@ -57,7 +57,7 @@
     },
     {
       "label": "Max Rh",
-      "value": "36",
+      "value": "39",
       "limit": "< 55",
       "triggered": true
     }
@@ -66,13 +66,13 @@
   "forecast": {
     "title": "West FDRA Extended Forecast",
     "dates": [
-      "7-Jul",
       "8-Jul",
       "9-Jul",
       "10-Jul",
       "11-Jul",
       "12-Jul",
-      "13-Jul"
+      "13-Jul",
+      "14-Jul"
     ],
     "rows": [
       {
@@ -92,83 +92,83 @@
         "values": [
           "98%",
           "98%",
+          "99%",
+          "99%",
+          "99%",
           "98%",
-          "99%",
-          "99%",
-          "99%",
-          "99%"
+          "98%"
         ]
       },
       {
         "label": "BI-Y Percentile",
         "values": [
-          "94%",
           "96%",
-          "99%",
-          "97%",
+          "98%",
+          "98%",
           "95%",
           "92%",
-          "86%"
+          "88%",
+          "84%"
         ]
       },
       {
         "label": "Temperature",
         "values": [
           "95",
-          "96",
           "95",
           "94",
-          "97",
-          "96",
-          "93"
+          "98",
+          "94",
+          "91",
+          "92"
         ]
       },
       {
         "label": "Relative Humidity",
         "values": [
-          "13",
           "10",
-          "8",
-          "8",
           "7",
-          "10",
-          "14"
+          "7",
+          "6",
+          "13",
+          "18",
+          "17"
         ]
       },
       {
         "label": "Winds",
         "values": [
-          "12",
           "13",
-          "14",
-          "12",
+          "13",
+          "13",
           "10",
-          "12",
-          "12"
+          "14",
+          "13",
+          "9"
         ]
       },
       {
         "label": "Wind Direction",
         "values": [
-          "NNE",
           "N",
           "N",
           "N",
           "N",
           "NNE",
-          "NNE"
+          "NNE",
+          "NE"
         ]
       },
       {
         "label": "Precipitation 24hr rain",
         "values": [
           "0.00",
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00",
           "0.01",
-          "0.00",
-          "0.00",
-          "0.00",
-          "0.00",
-          "0.08"
+          "0.00"
         ]
       },
       {
@@ -186,37 +186,37 @@
       {
         "label": "Max Relative Humidity",
         "values": [
-          "36",
-          "37",
-          "29",
-          "28",
-          "24",
+          "39",
+          "32",
           "27",
-          "33"
+          "23",
+          "29",
+          "38",
+          "42"
         ]
       },
       {
         "label": "ERC-Y (Actual Number 1-81)",
         "values": [
-          "69",
-          "69",
+          "70",
+          "70",
           "71",
+          "72",
+          "72",
           "71",
-          "73",
-          "73",
           "71"
         ]
       },
       {
         "label": "BI-Y  (Actual Number 1-66)",
         "values": [
-          "45",
           "47",
-          "51",
-          "48",
+          "49",
+          "49",
           "45",
-          "43",
-          "41"
+          "44",
+          "41",
+          "39"
         ]
       }
     ]
@@ -2443,20 +2443,20 @@
         [
           186,
           69
-        ]
-      ],
-      "forecasted": [
-        [
-          186,
-          69
         ],
         [
           187,
           69
+        ]
+      ],
+      "forecasted": [
+        [
+          187,
+          70
         ],
         [
           188,
-          71
+          70
         ],
         [
           189,
@@ -2464,14 +2464,18 @@
         ],
         [
           190,
-          73
+          72
         ],
         [
           191,
-          73
+          72
         ],
         [
           192,
+          71
+        ],
+        [
+          193,
           71
         ]
       ]
