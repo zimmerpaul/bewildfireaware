@@ -2,10 +2,10 @@
   "slug": "durango_upper",
   "name": "Durango (Upper)",
   "dispatchTitle": "Durango Interagency Dispatch Area",
-  "dateLabel": "Friday, July 10",
+  "dateLabel": "Saturday, July 11",
   "areaTitle": "Durango - UPPER",
   "danger": "Extreme",
-  "lastUpdated": "7/10/2026 2:53:43",
+  "lastUpdated": "7/11/2026 2:53:43",
   "restrictions": {
     "text": "Fire restrictions may be in place, for up to date info:",
     "url": "https://westslopefireinfo.com/"
@@ -13,13 +13,13 @@
   "observations": [
     {
       "label": "ERC %",
-      "value": "97%",
+      "value": "98%",
       "limit": "> 90%",
       "triggered": true
     },
     {
       "label": "BI %",
-      "value": "96%",
+      "value": "94%",
       "limit": "> 90%",
       "triggered": true
     },
@@ -39,7 +39,7 @@
     },
     {
       "label": "Max Temp",
-      "value": "88",
+      "value": "91",
       "limit": "> 83",
       "triggered": true
     },
@@ -57,7 +57,7 @@
     },
     {
       "label": "Max Rh",
-      "value": "29",
+      "value": "28",
       "limit": "< 31",
       "triggered": true
     }
@@ -66,13 +66,13 @@
   "forecast": {
     "title": "Upper FDRA Extended Forecast",
     "dates": [
-      "10-Jul",
       "11-Jul",
       "12-Jul",
       "13-Jul",
       "14-Jul",
       "15-Jul",
-      "16-Jul"
+      "16-Jul",
+      "17-Jul"
     ],
     "rows": [
       {
@@ -80,71 +80,71 @@
         "values": [
           "Extreme",
           "Extreme",
-          "Extreme",
           "Very High",
           "Very High",
-          "Very High",
-          "Very High"
+          "High",
+          "High",
+          "High"
         ]
       },
       {
         "label": "ERC-Y Percentile",
         "values": [
+          "98%",
           "97%",
-          "98%",
-          "98%",
-          "96%",
-          "93%",
-          "94%",
-          "93%"
+          "95%",
+          "90%",
+          "86%",
+          "82%",
+          "82%"
         ]
       },
       {
         "label": "BI-Y Percentile",
         "values": [
-          "96%",
-          "91%",
-          "91%",
-          "81%",
+          "94%",
+          "87%",
           "67%",
-          "75%",
-          "71%"
+          "60%",
+          "56%",
+          "56%",
+          "56%"
         ]
       },
       {
         "label": "Temperature",
         "values": [
-          "88",
           "91",
-          "90",
+          "88",
+          "84",
           "83",
-          "83",
-          "83",
-          "82"
+          "81",
+          "79",
+          "79"
         ]
       },
       {
         "label": "Relative Humidity",
         "values": [
           "9",
-          "9",
-          "14",
+          "16",
           "25",
-          "24",
-          "24",
-          "25"
+          "27",
+          "28",
+          "30",
+          "31"
         ]
       },
       {
         "label": "Winds",
         "values": [
           "9",
-          "8",
-          "10",
           "9",
+          "8",
           "6",
-          "7",
-          "7"
+          "6",
+          "6",
+          "6"
         ]
       },
       {
@@ -152,10 +152,10 @@
         "values": [
           "NNE",
           "NNE",
-          "NNE",
           "NE",
           "NE",
           "NE",
+          "ENE",
           "NE"
         ]
       },
@@ -163,12 +163,12 @@
         "label": "Precipitation 24hr rain",
         "values": [
           "0.00",
-          "0.00",
           "0.01",
-          "0.11",
-          "0.06",
-          "0.05",
-          "0.16"
+          "0.15",
+          "0.18",
+          "0.31",
+          "0.19",
+          "0.19"
         ]
       },
       {
@@ -186,37 +186,37 @@
       {
         "label": "Max Rh",
         "values": [
-          "29",
-          "29",
-          "38",
-          "50",
-          "56",
-          "56",
-          "53"
+          "28",
+          "41",
+          "54",
+          "57",
+          "60",
+          "61",
+          "60"
         ]
       },
       {
         "label": "ERC-Y (Actual Number 1-70)",
         "values": [
-          "62",
           "63",
           "62",
-          "59",
-          "56",
-          "57",
-          "55"
+          "58",
+          "52",
+          "49",
+          "48",
+          "48"
         ]
       },
       {
         "label": "BI-Y  (Actual Number 1-55)",
         "values": [
-          "39",
-          "35",
-          "36",
-          "31",
+          "38",
+          "34",
           "28",
-          "29",
-          "28"
+          "25",
+          "25",
+          "24",
+          "25"
         ]
       }
     ]
@@ -2456,13 +2456,13 @@
         [
           189,
           60
-        ]
-      ],
-      "forecasted": [
+        ],
         [
           190,
           62
-        ],
+        ]
+      ],
+      "forecasted": [
         [
           191,
           63
@@ -2473,19 +2473,23 @@
         ],
         [
           193,
-          59
+          58
         ],
         [
           194,
-          56
+          52
         ],
         [
           195,
-          57
+          49
         ],
         [
           196,
-          55
+          48
+        ],
+        [
+          197,
+          48
         ]
       ]
     },
