@@ -2,10 +2,10 @@
   "slug": "grand_junction_middle",
   "name": "Grand Junction (Middle)",
   "dispatchTitle": "Grand Junction Interagency Dispatch Area",
-  "dateLabel": "Saturday, July 11",
+  "dateLabel": "Sunday, July 12",
   "areaTitle": "Grand Junction - Middle Elevation",
   "danger": "Extreme",
-  "lastUpdated": "7/11/2026 02:38",
+  "lastUpdated": "7/12/2026 02:38",
   "restrictions": {
     "text": "Fire restrictions may be in place, for up to date info:",
     "url": "https://westslopefireinfo.com/"
@@ -31,7 +31,7 @@
     },
     {
       "label": "Wind Dir",
-      "value": "N"
+      "value": "NNE"
     },
     {
       "label": "24hr Rain",
@@ -39,7 +39,7 @@
     },
     {
       "label": "Max Temp",
-      "value": "92",
+      "value": "93",
       "limit": "> 80",
       "triggered": true
     },
@@ -57,7 +57,7 @@
     },
     {
       "label": "Max Rh",
-      "value": "39",
+      "value": "37",
       "limit": "< 55",
       "triggered": true
     }
@@ -66,13 +66,13 @@
   "forecast": {
     "title": "Middle Elevation FDRA Extended Forecast",
     "dates": [
-      "11-Jul",
       "12-Jul",
       "13-Jul",
       "14-Jul",
       "15-Jul",
       "16-Jul",
-      "17-Jul"
+      "17-Jul",
+      "18-Jul"
     ],
     "rows": [
       {
@@ -83,7 +83,7 @@
           "Extreme",
           "Extreme",
           "Extreme",
-          "Very High",
+          "Extreme",
           "Very High"
         ]
       },
@@ -95,7 +95,7 @@
           "99%",
           "99%",
           "99%",
-          "96%",
+          "98%",
           "97%"
         ]
       },
@@ -103,35 +103,35 @@
         "label": "BI-Y Percentile",
         "values": [
           "94%",
+          "84%",
+          "92%",
           "94%",
-          "94%",
-          "95%",
-          "94%",
-          "59%",
-          "59%"
+          "90%",
+          "76%",
+          "68%"
         ]
       },
       {
         "label": "Temperature",
         "values": [
-          "92",
-          "94",
-          "92",
-          "90",
+          "93",
+          "91",
           "89",
+          "87",
           "85",
-          "84"
+          "83",
+          "83"
         ]
       },
       {
         "label": "Relative Humidity",
         "values": [
           "8",
-          "8",
-          "12",
-          "13",
-          "13",
-          "18",
+          "15",
+          "14",
+          "15",
+          "19",
+          "22",
           "21"
         ]
       },
@@ -142,21 +142,21 @@
           "10",
           "11",
           "12",
-          "12",
           "11",
+          "10",
           "9"
         ]
       },
       {
         "label": "Wind Direction",
         "values": [
-          "N",
-          "NNE",
           "NNE",
           "NNE",
           "NNE",
           "NE",
-          "ENE"
+          "NE",
+          "NE",
+          "NE"
         ]
       },
       {
@@ -166,9 +166,9 @@
           "0.00",
           "0.00",
           "0.01",
-          "0.12",
-          "0.14",
-          "0.08"
+          "0.06",
+          "0.07",
+          "0.13"
         ]
       },
       {
@@ -179,44 +179,44 @@
           "9",
           "9",
           "9",
-          "9",
+          "8",
           "8"
         ]
       },
       {
         "label": "Max Rh",
         "values": [
-          "39",
           "37",
-          "43",
           "44",
-          "46",
+          "49",
           "48",
-          "51"
+          "51",
+          "55",
+          "56"
         ]
       },
       {
         "label": "ERC-Y (Actual Number 1-69)",
         "values": [
-          "62",
-          "63",
-          "63",
           "63",
           "62",
-          "56",
+          "62",
+          "63",
+          "62",
+          "60",
           "57"
         ]
       },
       {
         "label": "BI-Y  (Actual Number 1-58)",
         "values": [
-          "39",
-          "39",
-          "39",
           "40",
-          "40",
-          "29",
-          "30"
+          "36",
+          "38",
+          "39",
+          "37",
+          "34",
+          "31"
         ]
       }
     ]
@@ -2463,35 +2463,39 @@
         [
           191,
           62
+        ],
+        [
+          192,
+          63
         ]
       ],
       "forecasted": [
-        [
-          191,
-          62
-        ],
         [
           192,
           63
         ],
         [
           193,
-          63
-        ],
-        [
-          194,
-          63
-        ],
-        [
-          195,
           62
         ],
         [
+          194,
+          62
+        ],
+        [
+          195,
+          63
+        ],
+        [
           196,
-          56
+          62
         ],
         [
           197,
+          60
+        ],
+        [
+          198,
           57
         ]
       ]
