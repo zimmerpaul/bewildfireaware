@@ -2,10 +2,10 @@
   "slug": "durango_upper",
   "name": "Durango (Upper)",
   "dispatchTitle": "Durango Interagency Dispatch Area",
-  "dateLabel": "Tuesday, July 14",
+  "dateLabel": "Wednesday, July 15",
   "areaTitle": "Durango - UPPER",
   "danger": "Very High",
-  "lastUpdated": "7/14/2026 2:53:43",
+  "lastUpdated": "7/15/2026 2:53:47",
   "restrictions": {
     "text": "Fire restrictions may be in place, for up to date info:",
     "url": "https://westslopefireinfo.com/"
@@ -13,19 +13,19 @@
   "observations": [
     {
       "label": "ERC %",
-      "value": "93%",
+      "value": "89%",
       "limit": "> 90%",
-      "triggered": true
+      "triggered": false
     },
     {
       "label": "BI %",
-      "value": "63%",
+      "value": "56%",
       "limit": "> 90%",
       "triggered": false
     },
     {
       "label": "Winds",
-      "value": "6",
+      "value": "5",
       "limit": "> 13",
       "triggered": false
     },
@@ -35,17 +35,17 @@
     },
     {
       "label": "24hr Rain",
-      "value": "0.06"
+      "value": "0.26"
     },
     {
       "label": "Max Temp",
-      "value": "86",
+      "value": "81",
       "limit": "> 83",
-      "triggered": true
+      "triggered": false
     },
     {
       "label": "Min Rh %",
-      "value": "26",
+      "value": "33",
       "limit": "< 10",
       "triggered": false
     },
@@ -57,7 +57,7 @@
     },
     {
       "label": "Max Rh",
-      "value": "63",
+      "value": "70",
       "limit": "< 31",
       "triggered": false
     }
@@ -66,20 +66,20 @@
   "forecast": {
     "title": "Upper FDRA Extended Forecast",
     "dates": [
-      "14-Jul",
       "15-Jul",
       "16-Jul",
       "17-Jul",
       "18-Jul",
       "19-Jul",
-      "20-Jul"
+      "20-Jul",
+      "21-Jul"
     ],
     "rows": [
       {
         "label": "Adjective Fire Danger",
         "values": [
           "Very High",
-          "Very High",
+          "High",
           "High",
           "High",
           "High",
@@ -90,85 +90,85 @@
       {
         "label": "ERC-Y Percentile",
         "values": [
-          "93%",
           "89%",
           "78%",
           "65%",
           "60%",
           "58%",
-          "60%"
+          "60%",
+          "58%"
         ]
       },
       {
         "label": "BI-Y Percentile",
         "values": [
-          "63%",
           "56%",
           "48%",
           "45%",
           "42%",
           "45%",
-          "45%"
+          "45%",
+          "40%"
         ]
       },
       {
         "label": "Temperature",
         "values": [
-          "86",
           "81",
           "79",
           "76",
           "78",
           "80",
-          "81"
+          "81",
+          "79"
         ]
       },
       {
         "label": "Relative Humidity",
         "values": [
-          "26",
           "33",
           "38",
           "43",
           "39",
           "35",
-          "33"
+          "33",
+          "30"
         ]
       },
       {
         "label": "Winds",
         "values": [
-          "6",
           "5",
           "5",
           "6",
           "5",
           "6",
-          "6"
+          "6",
+          "5"
         ]
       },
       {
         "label": "Wind Direction",
         "values": [
           "ENE",
-          "ENE",
           "E",
           "ENE",
           "ENE",
           "ENE",
-          "ENE"
+          "ENE",
+          "NNE"
         ]
       },
       {
         "label": "Precipitation 24hr rain",
         "values": [
-          "0.06",
           "0.26",
           "0.29",
           "0.27",
           "0.21",
           "0.13",
-          "0.21"
+          "0.21",
+          "0.14"
         ]
       },
       {
@@ -176,56 +176,56 @@
         "values": [
           "9",
           "9",
-          "9",
           "10",
           "11",
           "12",
-          "12"
+          "12",
+          "13"
         ]
       },
       {
         "label": "Max Rh",
         "values": [
-          "63",
           "70",
           "77",
           "76",
           "73",
           "71",
-          "66"
+          "66",
+          "64"
         ]
       },
       {
         "label": "ERC-Y (Actual Number 1-70)",
         "values": [
-          "56",
           "52",
           "46",
           "40",
           "37",
           "37",
-          "38"
+          "38",
+          "36"
         ]
       },
       {
         "label": "BI-Y  (Actual Number 1-55)",
         "values": [
-          "26",
           "25",
           "22",
           "21",
           "21",
           "21",
-          "22"
+          "22",
+          "19"
         ]
       }
     ]
   },
   "fuelModel": "Fuel Model - Y",
   "watchout": {
-    "met": 3,
+    "met": 1,
     "total": 7,
-    "isWatchout": true
+    "isWatchout": false
   },
   "raws": "The Upper Fire Danger Rating Area uses the following Remote Automated Weather Stations (RAWS) which are equally weighted in value, using Fuel Model Z (Slash) incorporating data years 2005-2024 are:  \nSalter (055205), Devil Mtn. (055901), Sandoval (055902), Log Chute (055808)",
   "pocketCard": {
@@ -2472,13 +2472,13 @@
         [
           193,
           58
-        ]
-      ],
-      "forecasted": [
+        ],
         [
           194,
           56
-        ],
+        ]
+      ],
+      "forecasted": [
         [
           195,
           52
@@ -2502,6 +2502,10 @@
         [
           200,
           38
+        ],
+        [
+          201,
+          36
         ]
       ]
     },

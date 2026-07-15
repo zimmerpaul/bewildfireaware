@@ -2,14 +2,14 @@
   "slug": "durango_lower",
   "name": "Durango (Lower)",
   "dispatchTitle": "Durango Interagency Dispatch Area",
-  "dateLabel": "Tuesday, July 14",
+  "dateLabel": "Wednesday, July 15",
   "areaTitle": "DRC Lower",
   "danger": "High",
-  "lastUpdated": "7/14/2026 2:53:48",
+  "lastUpdated": "7/15/2026 2:53:53",
   "observations": [
     {
       "label": "ERC %",
-      "value": "77%",
+      "value": "67%",
       "limit": "> 90%",
       "triggered": false
     },
@@ -21,7 +21,7 @@
     },
     {
       "label": "Winds",
-      "value": "9",
+      "value": "10",
       "limit": "> 11",
       "triggered": false
     },
@@ -31,17 +31,17 @@
     },
     {
       "label": "24hr Rain",
-      "value": "0.29"
+      "value": "0.35"
     },
     {
       "label": "Max Temp",
-      "value": "86",
+      "value": "83",
       "limit": "> 89",
       "triggered": false
     },
     {
       "label": "Min Rh %",
-      "value": "26",
+      "value": "31",
       "limit": "< 9",
       "triggered": false
     },
@@ -53,7 +53,7 @@
     },
     {
       "label": "Max Rh",
-      "value": "68",
+      "value": "66",
       "limit": "< 30",
       "triggered": false
     }
@@ -62,84 +62,84 @@
   "forecast": {
     "title": "Lower FDRA Extended Forecast",
     "dates": [
-      "14-Jul",
       "15-Jul",
       "16-Jul",
       "17-Jul",
       "18-Jul",
       "19-Jul",
-      "20-Jul"
+      "20-Jul",
+      "21-Jul"
     ],
     "rows": [
       {
         "label": "Adjective Fire Danger",
         "values": [
           "High",
+          "Moderate",
+          "Moderate",
+          "Moderate",
+          "Moderate",
           "High",
-          "Moderate",
-          "Moderate",
-          "Moderate",
-          "Moderate",
-          "High"
+          "Moderate"
         ]
       },
       {
         "label": "ERC-Y Percentile",
         "values": [
-          "77%",
           "67%",
           "44%",
           "37%",
           "47%",
           "52%",
-          "63%"
+          "63%",
+          "49%"
         ]
       },
       {
         "label": "BI-Y Percentile",
         "values": [
           "79%",
-          "79%",
           "52%",
           "47%",
           "55%",
           "57%",
-          "74%"
+          "74%",
+          "59%"
         ]
       },
       {
         "label": "Temperature",
         "values": [
-          "86",
           "83",
           "80",
           "76",
           "77",
           "79",
+          "80",
           "80"
         ]
       },
       {
         "label": "Relative Humidity",
         "values": [
-          "26",
           "31",
           "37",
           "43",
           "41",
           "35",
+          "32",
           "32"
         ]
       },
       {
         "label": "Winds",
         "values": [
-          "9",
           "10",
           "8",
           "8",
           "7",
           "7",
+          "8",
           "8"
         ]
       },
@@ -147,24 +147,24 @@
         "label": "Wind Direction",
         "values": [
           "NE",
-          "NE",
           "ENE",
           "ENE",
           "ENE",
           "ENE",
-          "ENE"
+          "ENE",
+          "NNE"
         ]
       },
       {
         "label": "Precipitation 24hr rain",
         "values": [
-          "0.09",
           "0.29",
           "0.35",
           "0.28",
           "0.20",
           "0.14",
-          "0.23"
+          "0.23",
+          "0.13"
         ]
       },
       {
@@ -172,47 +172,47 @@
         "values": [
           "8",
           "8",
-          "8",
           "9",
           "10",
           "11",
+          "12",
           "12"
         ]
       },
       {
         "label": "Max Rh",
         "values": [
-          "55",
           "65",
           "72",
           "68",
           "66",
           "65",
-          "59"
+          "59",
+          "57"
         ]
       },
       {
         "label": "ERC-X (Actual Number 1-106)",
         "values": [
-          "77",
           "72",
           "57",
           "50",
           "59",
           "64",
-          "70"
+          "70",
+          "60"
         ]
       },
       {
         "label": "BI-X  (Actual Number 1-285)",
         "values": [
           "151",
-          "151",
           "115",
           "110",
           "118",
           "123",
-          "142"
+          "142",
+          "124"
         ]
       }
     ]
@@ -2468,13 +2468,13 @@
         [
           193,
           81
+        ],
+        [
+          194,
+          79
         ]
       ],
       "forecasted": [
-        [
-          194,
-          77
-        ],
         [
           195,
           72
@@ -2498,6 +2498,10 @@
         [
           200,
           70
+        ],
+        [
+          201,
+          60
         ]
       ]
     },
