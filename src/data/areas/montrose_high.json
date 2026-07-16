@@ -2,10 +2,10 @@
   "slug": "montrose_high",
   "name": "Montrose (High Elevation)",
   "dispatchTitle": "Montrose Interagency Dispatch Area",
-  "dateLabel": "Wednesday, July 15",
+  "dateLabel": "Thursday, July 16",
   "areaTitle": "Montrose - High Elevation",
   "danger": "Very High",
-  "lastUpdated": "7/15/2026 03:11",
+  "lastUpdated": "7/16/2026 03:11",
   "restrictions": {
     "text": "Fire restrictions in place, for up to date info:",
     "url": "https://westslopefireinfo.com/"
@@ -13,41 +13,41 @@
   "observations": [
     {
       "label": "ERC %",
-      "value": "97%",
+      "value": "94%",
       "limit": "> 90%",
       "triggered": true
     },
     {
       "label": "BI %",
-      "value": "75%",
+      "value": "64%",
       "limit": "> 90%",
       "triggered": false
     },
     {
       "label": "Winds",
-      "value": "7",
+      "value": "5",
       "limit": "> 15",
       "triggered": false
     },
     {
       "label": "Wind Dir",
-      "value": "NE"
+      "value": "ENE"
     },
     {
       "label": "24hr Rain",
-      "value": "0.17"
+      "value": "0.18"
     },
     {
       "label": "Max Temp",
-      "value": "78",
+      "value": "74",
       "limit": "> 86",
       "triggered": false
     },
     {
       "label": "Min Rh",
-      "value": "23",
+      "value": "34",
       "limit": "< 25",
-      "triggered": true
+      "triggered": false
     },
     {
       "label": "1000hr Fuels",
@@ -57,7 +57,7 @@
     },
     {
       "label": "Max Rh",
-      "value": "69",
+      "value": "82",
       "limit": "< 55",
       "triggered": false
     }
@@ -66,13 +66,13 @@
   "forecast": {
     "title": "High Elevation FDRA Extended Forecast",
     "dates": [
-      "15-Jul",
       "16-Jul",
       "17-Jul",
       "18-Jul",
       "19-Jul",
       "20-Jul",
-      "21-Jul"
+      "21-Jul",
+      "22-Jul"
     ],
     "rows": [
       {
@@ -90,59 +90,59 @@
       {
         "label": "ERC-Y Percentile",
         "values": [
-          "97%",
-          "92%",
-          "93%",
-          "92%",
           "94%",
-          "89%",
-          "86%"
+          "93%",
+          "94%",
+          "94%",
+          "91%",
+          "80%",
+          "74%"
         ]
       },
       {
         "label": "BI-Y Percentile",
         "values": [
-          "75%",
           "64%",
           "72%",
-          "69%",
-          "78%",
-          "69%",
-          "62%"
+          "81%",
+          "81%",
+          "72%",
+          "62%",
+          "56%"
         ]
       },
       {
         "label": "Temperature",
         "values": [
-          "78",
-          "76",
-          "73",
           "74",
           "75",
           "75",
-          "74"
+          "77",
+          "76",
+          "73",
+          "70"
         ]
       },
       {
         "label": "Relative Humidity",
         "values": [
-          "23",
-          "26",
           "34",
           "30",
-          "26",
+          "27",
+          "25",
           "30",
-          "32"
+          "36",
+          "38"
         ]
       },
       {
         "label": "Winds",
         "values": [
+          "5",
+          "6",
           "7",
-          "8",
           "7",
           "7",
-          "8",
           "8",
           "6"
         ]
@@ -150,9 +150,9 @@
       {
         "label": "Wind Direction",
         "values": [
-          "NE",
-          "NE",
           "ENE",
+          "NE",
+          "NE",
           "NE",
           "NE",
           "ENE",
@@ -162,13 +162,13 @@
       {
         "label": "Precipitation 24hr rain",
         "values": [
-          "0.17",
-          "0.25",
-          "0.09",
-          "0.05",
-          "0.08",
-          "0.17",
-          "0.16"
+          "0.18",
+          "0.03",
+          "0.00",
+          "0.02",
+          "0.32",
+          "0.41",
+          "0.22"
         ]
       },
       {
@@ -178,45 +178,45 @@
           "11",
           "11",
           "11",
-          "11",
-          "11",
-          "11"
+          "12",
+          "12",
+          "12"
         ]
       },
       {
         "label": "Max Rh",
         "values": [
-          "69",
-          "77",
-          "77",
-          "77",
+          "82",
+          "80",
           "76",
-          "69",
-          "73"
+          "73",
+          "74",
+          "75",
+          "77"
         ]
       },
       {
         "label": "ERC-Y (Actual Number 1-66)",
         "values": [
-          "49.1",
-          "44",
-          "44",
-          "44",
+          "45.0",
+          "45",
           "46",
-          "41",
-          "39"
+          "47",
+          "43",
+          "37",
+          "33"
         ]
       },
       {
         "label": "BI-Y  (Actual Number 1-52)",
         "values": [
-          "25",
           "22",
-          "24",
-          "24",
+          "25",
           "27",
-          "24",
-          "21"
+          "28",
+          "25",
+          "21",
+          "18"
         ]
       }
     ]
@@ -249,9 +249,9 @@
     ]
   },
   "watchout": {
-    "met": 3,
+    "met": 2,
     "total": 7,
-    "isWatchout": true
+    "isWatchout": false
   },
   "raws": "The High Elevation Fire Danger Rating Area uses the following Remote Automated Weather Stations (RAWS) which are equally weighted in value, using Fuel Model Y (Timber) incorporating data years 2005-2024 are:  \nHuntsman (52813), Lujan (54702), Needle Creek (54704), Taylor Park (52812)",
   "pocketCard": {
@@ -2502,36 +2502,40 @@
         [
           194,
           50
+        ],
+        [
+          195,
+          49
         ]
       ],
       "forecasted": [
         [
-          195,
-          49
-        ],
-        [
           196,
-          44
+          45
         ],
         [
           197,
-          44
+          45
         ],
         [
           198,
-          44
-        ],
-        [
-          199,
           46
         ],
         [
+          199,
+          47
+        ],
+        [
           200,
-          41
+          43
         ],
         [
           201,
-          39
+          37
+        ],
+        [
+          202,
+          33
         ]
       ]
     },
